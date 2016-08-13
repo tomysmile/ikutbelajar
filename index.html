@@ -34,9 +34,6 @@
 		                        <a href="#section-1" class="inner-link">Pengenalan</a>
 		                    </li>
 		                    <li>
-		                        <a href="#screenshot" class="inner-link">Screenshot Showcase</a>
-		                    </li>
-		                    <li>
 		                        <a href="#join-beta" class="inner-link">Join Beta</a>
 		                    </li>
 		                </ul>
@@ -49,22 +46,27 @@
 		</div>
 		
 		<div class="main-container">
-		<section class="height-100 imagebg cover cover-3 parallax" data-overlay="1">
-				<div class="background-image-holder">
-					<img alt="image" src="img/my-header-image.jpg">
-				</div>
-				<div class="container pos-absolute pos-bottom text-center-xs">
-					<div class="row">
-						<div class="col-sm-6">
-							<img class="logo" alt="Pillar" src="img/logo-large-light.png">
-							<p class="lead" style="color:black">
-								Reimagine Education
-							</p>
-							
-						</div>
-					</div>
-				</div>
-			</section>
+		<section class="cover cover-9">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-12 text-center">
+                            <img alt="Logo" class="logo" src="img/logo-large-dark.png" />
+                            <p class="lead">
+                                Reimagine Education
+                            </p>
+                            
+                        </div>
+                    </div>
+                    <!--end row-->
+                    <div class="row">
+                        <div class="col-sm-12 text-center">
+                            <img class="cover__image" alt="Device" src="img/cool.png" />
+                        </div>
+                    </div>
+                    <!--end row-->
+                </div>
+                <!--end container-->
+            </section>
 
 			<section id="section-1">
                 <div class="container">
@@ -135,7 +137,7 @@
 			<section class="imageblock about-1">
 				<div class="imageblock__content col-md-6 col-sm-4 pos-right">
 					<div class="background-image-holder">
-						<img alt="image" src="img/inner2.jpg">
+						<img alt="image" src="img/my-section-4.jpg">
 					</div>
 				</div>
 				<div class="container">
@@ -149,61 +151,45 @@
 				</div>
 			</section>
 			
-			<section class="bg--dark" id="screenshot">
-				<div class="container">
-					<div class="row">
-						<div class="col-sm-12 text-center">
-							<h4>Screenshot Showcase</h4>
-							<div class="slider slider--controlsoutside screenshot-slider" data-items="4" data-paging="true" data-arrows="false">
-								<ul class="slides">
-									<li>
-										<div class="col-sm-12">
-											<img alt="screenshot" src="img/app-screenshot-1.jpg">
-										</div>
-									</li>
-									<li>
-										<div class="col-sm-12">
-											<img alt="screenshot" src="img/app-screenshot-2.jpg">
-										</div>
-									</li>
-									<li>
-										<div class="col-sm-12">
-											<img alt="screenshot" src="img/app-screenshot-3.jpg">
-										</div>
-									</li>
-									<li>
-										<div class="col-sm-12">
-											<img alt="screenshot" src="img/app-screenshot-4.jpg">
-										</div>
-									</li>
-									<li>
-										<div class="col-sm-12">
-											<img alt="screenshot" src="img/app-screenshot-5.jpg">
-										</div>
-									</li>
-									<li>
-										<div class="col-sm-12">
-											<img alt="screenshot" src="img/app-screenshot-6.jpg">
-										</div>
-									</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-			</section>
-			
 			<section class="cta cta-6" id="join-beta">
 				<div class="container">
 					<div class="row">
 						<div class="col-md-8 col-md-offset-2 col-sm-10 col-sm-offset-1 text-center">
 							<h3>Anda dan perjalanan kami</h3>
 							<p class="lead">
-								Perjalanan kami dalam membuat aplikasi sampai saat ini sangat menyenangkan, terutama jika anda bersedia bergabung. <br>Dapatkan akses beta kami dan masukkan nama anda dalam sejarah aplikasi IkutBelajar.</p>
-							<a class="btn btn--primary vpe" href="page-contact-form-simple.html">
-								<span class="btn__text">
-									join our beta</span>
-							</a>
+								Perjalanan kami dalam membuat aplikasi ini sangat menyenangkan, terlebih lagi jika anda bersedia bergabung. 
+								<br>Dapatkan akses beta beserta berbagai informasi terbaru mengenai aplikasi ini dan masukkan nama anda dalam sejarah IkutBelajar.</p>
+							<div class="modal-instance">
+                                <a class="btn btn--primary modal-trigger" href="#">
+                                    <span class="btn__text">Dapatkan akses beta</span>
+                                </a>
+                                <div class="modal-container">
+                                    <div class="modal-content bg--white height--natural">
+                                        <div class="form-subscribe-1 boxed boxed--lg bg--white box-shadow-wide">
+                                            <div class="subscribe__title text-center">
+                                                <h4>Dapatkan akses beta</h4>
+                                                <p>Masukkan nama dan alamat email kamu dan kami akan kirimkan rahasia cara membuka aplikasi IkutBelajar beta disana!</p>
+                                            </div>
+                                            <form class=" form--center-submit-button" action="http://mrareco.createsend.com/t/d/s/kieth/" method="post" id="subForm" data-error="Please fill all fields correctly." data-success="Thanks for signing up! Please check your inbox for confirmation email.">
+                                                <div class="input-with-icon">
+                                                    <label for="fieldName">Nama Kamu</label>
+                                                    <i class="icon icon-Male-2"></i>
+                                                    <input id="fieldName" name="cm-name" type="text" />
+                                                </div>
+                                                <div class="input-with-icon">
+                                                    <label for="fieldEmail">Email Kamu</label>
+                                                    <i class="icon icon-Mail-2"></i>
+                                                    <input class="validate-required validate-email" id="fieldEmail" name="cm-kieth-kieth" type="email" required />
+                                                </div>
+                                                <button type="submit">Aku mau akses beta!</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                    <!--end of modal-content-->
+                                </div>
+                                <!--end of modal-container-->
+                            </div>
+                            <!--end of modal instance-->
 						</div>
 					</div>
 				</div>
@@ -240,7 +226,7 @@
 		            <li class="vpe">
 		                <a href="#"><i class="socicon-instagram"></i></a>
 		            </li> -->
-		        </ul><span class="type--fine-print">© Copyright <span class="update-year">2016</span> BakrDigital - All Rights Reserved</span>
+		        </ul><span class="type--fine-print">© Copyright <span class="update-year">2016</span> IkutBelajar - All Rights Reserved</span>
 		    </div>
 		</footer>
 		</div>
