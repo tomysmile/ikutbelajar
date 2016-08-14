@@ -1,0 +1,32 @@
+*.csv
+*.dat
+*.iml
+*.log
+*.out
+*.pid
+*.seed
+*.swo
+*.swp
+*.tgz
+*.xml
+
+# temp files
+.DS_Store
+.tmp
+.sass-cache
+.idea
+.project
+.strong-pm
+.cache
+.npm
+.vagrant
+.dropbox
+coverage
+
+# IDE
+*.sublime-*
+
+# npm & bower
+node_modules
+bower_components
+npm-debug.log
